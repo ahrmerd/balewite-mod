@@ -14,7 +14,8 @@ const nav = useNavigation();
   <div>
     <header>
       <router-link :to="{ name: 'Home' }" class="logo">
-        <img src="@/assets/logo.png" alt="" srcset="" />
+        <!-- <img src="@/assets/logo.png" alt="" srcset="" /> -->
+        Balewites
       </router-link>
       <transition name="slide">
         <NavMenu class="nav-menu" v-if="nav.navIsOpen.value"></NavMenu>
@@ -50,9 +51,9 @@ header {
   background-color: rgb(173, 173, 173);
 
   .logo {
-    img {
-      height: 2rem;
-    }
+    color: #000000;
+    font-weight: 700;
+    font-size: large;
   }
 
   .material-design-icon {
