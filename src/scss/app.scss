@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root{
+    --secondary: purple;
+    --primary: blue;
+    --box-neumorphic: 2px 2px 5px #babecc,
+    -5px -5px 10px #ffffff73;
+    --box-neumorphic-inset: inset 2px 2px 5px #babecc,
+    inset -5px -5px 10px #ffffff73;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+button {
+    padding: 1rem;
+    display: inline-block;
+    color: #000;
+    text-transform: capitalize;
+    background: #dde1e7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+
+    &:hover {
+        transform: scale(0.85);
+    }
+
+    &:active {
+        color: #3498db;
+        box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+    }
+}
+
+table{
+    border: 1px solid;
+    // box-shadow: var(--box-neumorphic);
+    border-collapse: collapse;
+    // border-radius: 1rem;
+    width: 100%;
+    table-layout: fixed;
+    caption{
+        font-size: 1.35rem;
+        padding: .5rem;
+        font-weight: bold;
+    }
+    tr{
+        // border: 1px solid;
+        box-shadow: var(--box-neumorphic-inset);
+        // padding: 4.625rem;
+        // text-align: center;
+    }
+    tr:nth-child(2n){
+        background-color: rgb(202, 202, 202);
+    }
+    th, td{
+        padding: 1rem;
+2222222222222    }
+    22222222222222222
+
+    @media screen and (max-width: 600px) {
+        border: 0;
+        caption{
+            font-size: 1.2rem;
+        }
+        thead{
+            display: none;
+        }
+        td{
+            display: block;
+            text-align: right;
+            // display: block;
+        }
+
+        td::before {
+            content: attr(data-label);
+            float: left;
+        }
+    }
+}
+
+
+.blue{
+    background-color: blue;
+    color: white;
+}
+.red {
+    background-color: red;
+    color: white;
+}
+.white {
+    background-color: white;
+    color: black;
+}
+.mt-1{
+    margin-top: 10px;
+}
+
+.app {
+    margin-top: 5rem;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: .5rem;
+}

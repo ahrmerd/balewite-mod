@@ -1,0 +1,31 @@
+{
+  "name": "mod-app",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.7",
+    "@braid/vue-formulate": "^2.5.3",
+    "@types/js-cookie": "^3.0.1",
+    "axios": "^0.24.0",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.29.1",
+    "qs": "^6.10.3",
+    "vue": "^3.2.25",
+    "vue-material-design-icons": "^5.0.0",
+    "vue-query": "^1.19.0",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.7",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "sass": "^1.47.0",
+    "sass-loader": "^12.4.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  }
+}

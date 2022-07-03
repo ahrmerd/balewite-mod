@@ -1,0 +1,107 @@
+$primary: #117e99;
+$secondary: #7838ef;
+
+
+.page {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.other-links{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    *{
+        box-shadow: var(--box-neumorphic);
+         border-radius: .5rem;
+         padding: .5rem;
+        &:hover {
+            color: #3498db;
+            box-shadow: var(--box-neumorphic-inset);
+        }
+     }
+     
+}
+
+.form {
+    width: 30rem;
+    background: #dde1e7;
+    border-radius: 10px;
+    padding: 4rem;
+    box-shadow: var(--box-neumorphic);
+
+    .title {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 35px;
+        color: #000;
+    }
+
+    
+}
+.submit-button {
+    margin: 25px 0 0 0;
+    width: 100%;
+    padding: 1rem 3rem;
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    background: #dde1e7;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: var(--box-neumorphic);
+    
+    &:hover, &:active {
+        box-shadow: var(--box-neumorphic-inset);
+    }
+}
+
+.form-item {
+    position: relative;
+    padding: 15px 0 0;
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    &:nth-child(n+1) {
+        margin-top: 20px;
+    }
+    textarea,
+    select,
+    input {
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid gray;
+        outline: 0;
+        font-size: 1rem;
+        color: black;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+
+    }
+    select{
+        padding: .5rem;
+    }
+    label {
+        position: absolute;
+        top: 0px;
+        display: block;
+        color: gray;
+    }
+
+    textarea:focus, input:focus {
+        padding-bottom: 6px;
+        font-weight: 700;
+        border-width: 3px;
+        border-image: linear-gradient(to right, $primary, $secondary);
+        border-image-slice: 1;
+    }
+}
+
