@@ -24,17 +24,8 @@ useQueryProvider(client);
 @import "./scss/forms.scss";
 @import "./scss/animations.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 body {
   background: #dde1e7;
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
