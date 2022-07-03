@@ -20,13 +20,8 @@ const selectTab = (tabTitle: string) => {
 <template>
   <div class="tabs">
     <ul class="tabs-header">
-      <li
-        v-for="(tabTitle, index) in tabTitles"
-        class="tab-title"
-        :class="{ 'selected-title': tabTitle == selectedTabTitle }"
-        :key="index"
-        @click="() => selectTab(tabTitle)"
-      >
+      <li v-for="(tabTitle, index) in tabTitles" class="tab-title"
+        :class="{ 'selected-title': tabTitle == selectedTabTitle }" :key="index" @click="() => selectTab(tabTitle)">
         {{ tabTitle }}
       </li>
     </ul>
@@ -41,22 +36,27 @@ const selectTab = (tabTitle: string) => {
 .tab-view {
   margin-top: 1rem;
 }
+
 .tabs-header {
   display: flex;
   list-style: none;
+  width: 80%;
+  margin: auto;
   justify-content: space-evenly;
+
   .tab-title {
     cursor: pointer;
     padding: 0.5rem;
     width: 100%;
     border: 1px solid rgba($color: #000000, $alpha: 0.5);
     // box-shadow: var(--box-neumorphic-inset);
-    background-color: gray;
-    color: white;
-  }
-  .selected-title {
-    background-color: white;
     color: black;
+    background-color: white;
+  }
+
+  .selected-title {
+    color: white;
+    background-color: gray;
   }
 }
 </style>

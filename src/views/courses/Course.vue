@@ -22,11 +22,11 @@ const { data, isError, isSuccess } = useQuery({
       <Tab title="Lectures">
         <Lectures :courseId="id" />
       </Tab>
-      <Tab title="Materials">b</Tab>
       <Tab title="Quizzes">
         <Quizzes :courseId="id" />
       </Tab>
     </Tabs>
   </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
