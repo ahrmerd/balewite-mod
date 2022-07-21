@@ -15,7 +15,7 @@ const router = useRouter();
 onMounted(async () => {
   const data = await Rbuilder.make("departments").get();
   // console.log(data);
-  departments.value = data;
+  departments.value = data.data;
   console.log(data);
 });
 const register = async () => {
@@ -77,7 +77,9 @@ const register = async () => {
         <div class="form-item">
           <span class="icon"></span>
           <select name="department" id="department" v-model="departmentId">
-            <option value="" disabled selected>--please select a department--</option>
+            <option value="" disabled selected>
+              --please select a department--
+            </option>
             <option
               v-for="department in departments"
               :key="department.id"
